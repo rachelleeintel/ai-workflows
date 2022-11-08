@@ -115,26 +115,15 @@ pip install tf_nightly-2.10.0-cp38-cp38-linux_x86_64.whl
    ##### 1) Sports Dataset Training
         a) FP32 : bash sports.sh --PRECISION FP32 --OUTPUT_DIR "logs/fit/sportsFP32/" --DATASET_DIR datasets/sports --PLATFORM SPR
         b) BF16: bash sports.sh --PRECISION Mixed_Precision --OUTPUT_DIR "logs/fit/sportsBF16/" --DATASET_DIR datasets/sports --PLATFORM SPR
-   ##### 2) Sports Dataset Inference
-        a) Inference FP32: bash sports.sh --inference -cp "logs/fit/sportsFP32" --PRECISION FP32 --OUTPUT_DIR "logs/fit/trailinfFP32" --DATASET_DIR datasets/sports --PLATFORM SPR
-        b) Inference BF16: bash sports.sh --inference -cp "logs/fit/sportsBF16" --PRECISION Mixed_Precision --OUTPUT_DIR "logs/fit/trailinfBF16/" --DATASET_DIR datasets/sports --PLATFORM SPR
 
    ##### 2) Remote Sensing Dataset Training
         a) FP32 : bash resisc.sh --PRECISION FP32 --OUTPUT_DIR "logs/fit/resiscFP32/" --DATASET_DIR datasets/resisc45 --PLATFORM SPR --BATCH_SIZE 256
         b) BF16: bash resisc.sh --PRECISION Mixed_Precision --OUTPUT_DIR "logs/fit/resiscBF16/" --DATASET_DIR  datasets/resisc45 --PLATFORM SPR --BATCH_SIZE 256
    
-   ##### 2) Remote Sensing Dataset Inference
-        a) Inference FP32: bash resisc.sh --inference -cp "logs/fit/resiscFP32" --PLATFORM SPR --DATASET_DIR datasets/resisc45
-        b) Inference BF16: bash resisc.sh --PRECISION Mixed_Precision --inference -cp "logs/fit/resiscBF16" --PLATFORM SPR --DATASET_DIR datasets/resisc45
-
-
    ##### 3) Medical Imaging Dataset Training
         a) FP32 : bash colorectal.sh --PRECISION FP32 --OUTPUT_DIR "logs/fit/colorectalFP32/" --DATASET_DIR datasets/colorectal --PLATFORM SPR
         b) BF16: bash colorectal.sh --PRECISION Mixed_Precision --OUTPUT_DIR "logs/fit/colorectalBF16/" --DATASET_DIR datasets/colorectal --PLATFORM SPR
    
-   ##### 3) Medical Imaging Dataset Inference
-        a) Inference FP32: bash colorectal.sh --inference -cp "logs/fit/colorectalFP32" --PRECISION FP32 --OUTPUT_DIR "logs/fit/colorectalFP32/" --DATASET_DIR datasets/colorectal --PLATFORM SPR
-        b) Inference BF16: bash colorectal.sh --inference -cp "logs/fit/colorectalBF16" --PRECISION Mixed_Precision --OUTPUT_DIR "logs/fit/colorectalBF16/" --DATASET_DIR datasets/colorectal --PLATFORM SPR
 
 ## Documentation
 [Docker* Repository](https://hub.docker.com/u/intel) <br>
