@@ -5,7 +5,7 @@ The vision-based Transfer Learning workflow showcases transfer learning on image
 
 ## **How it Works**
 
-* The workflow uses pretrained SOTA models ( RESNET V1.5) from TF hub and Intel optimized TensorFlow to transfer the knowledge from a pretrained domain to a different custom domain achieving required accuracy
+* Uses pretrained SOTA models ( RESNET V1.5) from TF hub and Intel optimized TensorFlow to transfer the knowledge from a pretrained domain to a different custom domain achieving required accuracy
 
 * Image classification is done on three domains: sports , medical imaging and remote sensing
 
@@ -27,6 +27,14 @@ git checkout v1.0.0
 ```
 
 #### Download Dataset
+
+##### Sports
+```
+        cd datasets/sports
+        unzip sports_train.zip -d .
+        unzip sports_test.zip -d .
+        unzip sports_validation.zip -d .
+ ```      
 ##### Medical Imaging
 Dataset is downloaded from TensorFlow website when the code is run for the first time. The dataset used for this domain is `colorectal_histology`. More details can be found at [Tensorflow Datases](https://www.tensorflow.org/datasets/catalog/colorectal_histology). 
 
@@ -51,7 +59,7 @@ Below setup and how-to-run sessions are for users who want to use provided docke
 | DATASET_DIR | Download the dataset the set it to `DATASET_DIR`. This directory is optional for Medical Imaging as this dataset will be downloaded from TensorFlow website when the code is run for the first time. Set to `DATASET_DIR=/data` for Medical Imaging | 
 | PLATFORM | `SPR` and `None` are supported platforms | 
 | PRECISION | `bf16` and `FP32 ` are supported precisions | 
-| SCRIPT | `colorectal` and `resisc ` are available scripts names | 
+| SCRIPT | `colorectal`, `sports` and `resisc ` are available scripts names | 
 
 ##### Pull Docker Image
 ```
