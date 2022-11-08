@@ -110,6 +110,7 @@ pip install tf_nightly-2.10.0-cp38-cp38-linux_x86_64.whl
 #### How to run
 
 ##### Command line arguments
+```
 --PRECISION - whether to use Mixed_Precision or FP32 precision Options : [FP32(default),Mixed Precision]"
               For Mixed Precion , BF16 is used if supported by hardware , if FP16 is supported it is chosen, if none is supported falls back to FP32
 --PLATFORM - To optimize for SPR : [None(default),SPR]"
@@ -120,6 +121,7 @@ pip install tf_nightly-2.10.0-cp38-cp38-linux_x86_64.whl
                  If test dataset is not present validation dataset is used"
  --BATCH_SIZE - Batch Size for training[32(default)]"
  --NUM_EPOCHS  - Num epochs for training[100(default)]"
+ ```
  
    ##### 1) Sports Dataset Inference
         a) Inference FP32: bash sports.sh --inference -cp "logs/fit/sportsFP32" --PRECISION FP32 --OUTPUT_DIR "logs/fit/trailinfFP32" --DATASET_DIR datasets/sports --PLATFORM SPR
