@@ -30,10 +30,10 @@ git checkout v1.0.0
 
 ##### Sports
 ```
-        cd datasets/sports
-        unzip sports_train.zip -d .
-        unzip sports_test.zip -d .
-        unzip sports_validation.zip -d .
+cd datasets/sports
+unzip sports_train.zip -d .
+unzip sports_test.zip -d .
+unzip sports_validation.zip -d .
  ```      
 ##### Medical Imaging
 Dataset is downloaded from TensorFlow website when the code is run for the first time. The dataset used for this domain is `colorectal_histology`. More details can be found at [Tensorflow Datases](https://www.tensorflow.org/datasets/catalog/colorectal_histology). 
@@ -50,6 +50,7 @@ Below setup and how-to-run sessions are for users who want to use provided docke
 ##### Quick Start Scripts
 | Script Name | Description | 
 | --- | --- |
+| `sports.sh` | Script for sports dataset |
 | `colorectal.sh` | Script for medical imaging dataset | 
 | `resisc.sh` | Script for remote sensing dataset | 
 
